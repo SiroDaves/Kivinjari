@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <VersionPrefix>0.0.3</VersionPrefix>
+    <LangVersion>Latest</LangVersion>
+    <AssemblyName>Webview.Core</AssemblyName>
+    <PackageId>Webview.Core</PackageId>
+    <Authors>Webview.Core</Authors>
+    <Product>Webview.Core</Product>
+    <RuntimeIdentifiers>win10-x64;win10-x86;osx-x64;linux-x64;linux-arm</RuntimeIdentifiers>
+    <RootNamespace>Webview</RootNamespace>
+    <Description>.NET host for the Webview WebBrowser</Description>
+    <PackageLicenseUrl>https://github.com/webview-cs/webview-cs/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/webview-cs/webview-cs</PackageProjectUrl>
+    <PackageReleaseNotes />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.26" />
+    <PackageReference Include="Webview.Batteries.Linux" Version="0.1.0" />
+    <PackageReference Include="Webview.Batteries.Mac" Version="0.1.0" />
+    <PackageReference Include="Webview.Batteries.Win" Version="0.1.0" />
+  </ItemGroup>
+
+</Project>

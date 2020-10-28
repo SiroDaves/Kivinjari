@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo App</title>
+</head>
+<body>
+<h1>Eval</h1>
+<div id='content'></div>
+
+<input type='text' id='nameInput' placeholder='enter name'/>
+<button onclick='MyButtonClick()'>Do it!</button>
+<p id='display'></p>
+
+<script>
+    function MyButtonClick() {
+        window.external.invoke('DisplayName:'+document.getElementById('nameInput').value);
+    }
+</script>
+</body>
+</html>

@@ -5,6 +5,7 @@
 
 # User-specific files
 *.rsuser
+*.dll
 *.suo
 *.user
 *.userosscache
@@ -30,6 +31,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+build/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/

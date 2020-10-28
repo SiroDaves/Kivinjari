@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>Kivinjari.Program</StartupObject>
+    <ApplicationIcon>Resources\DefaultIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>D:\CSharp\Projects\Kivinjari\build\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EasyTabs" Version="2.0.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.26" />
+    <PackageReference Include="Svg" Version="3.1.1" />
+    <PackageReference Include="Webview.Core" Version="0.0.3" />
+    <PackageReference Include="Win32Interop.Dwmapi" Version="1.0.1" />
+    <PackageReference Include="Win32Interop.Gdi32" Version="1.0.1" />
+    <PackageReference Include="Win32Interop.Kernel32" Version="1.0.1" />
+    <PackageReference Include="Win32Interop.User32" Version="1.0.1" />
+    <PackageReference Include="Win32Interop.Uxtheme" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
